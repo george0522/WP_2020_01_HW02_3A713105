@@ -14,8 +14,11 @@ namespace WP_2020_01_HW02_3A713105
     public partial class Form1 : Form
     {
         List<Image> list = new List<Image>();
+        int m = 53;
+        static Int32[] card = new Int32[54];
         public Form1()
         {
+            rest0();
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -77,9 +80,34 @@ namespace WP_2020_01_HW02_3A713105
         }
         private void btnRUN_Click(object sender, EventArgs e)
         {
-            int randomNum = new Random().Next(53); //0-100
-            int index = randomNum + 1;//模擬隨機產生 一個值;
-            pbCARD.Image = list[index];
+            textBox2.Text = "";
+            int randomNum = new Random().Next(m); //0-100
+            int index = randomNum + 1;//模擬隨機產生 一個值;         
+            pbCARD.Image = list[card[index]];
+            textBox1.Text = textBox1.Text + " " + card[index];
+            for (int i = index; i < m - 1; i++)            //遞前
+            {
+                card[i] = card[i + 1];
+            }
+            for (int i = 0; i < m - 1; i++)             //看剩多少
+            {
+                textBox2.Text = textBox2.Text + " " + card[i];
+            }
+            if (m == 0)
+            {
+                MessageBox.Show("全部抽完了");
+                this.Close();
+            }
+            m--;
+        }
+        static void rest0()
+        {
+            //static Int32[] card = new Int32[54];
+            for (int p = 0; p < 54; p++)
+            {
+                card[p] = p;
+            }
+
         }
 
     }

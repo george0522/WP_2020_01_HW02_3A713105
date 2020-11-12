@@ -31,6 +31,10 @@
             this.pbCARD = new System.Windows.Forms.PictureBox();
             this.btnRUN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCARD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,11 +67,52 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "撲克牌抽卡";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(90, 105);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(130, 240);
+            this.textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(617, 105);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(130, 240);
+            this.textBox2.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("新細明體", 20F);
+            this.label2.Location = new System.Drawing.Point(85, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 27);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "抽到號碼紀錄";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("新細明體", 20F);
+            this.label3.Location = new System.Drawing.Point(612, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(201, 27);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "未抽到號碼紀錄";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRUN);
             this.Controls.Add(this.pbCARD);
@@ -85,6 +130,10 @@
         private System.Windows.Forms.PictureBox pbCARD;
         private System.Windows.Forms.Button btnRUN;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
