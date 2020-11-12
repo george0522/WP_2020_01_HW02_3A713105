@@ -135,6 +135,7 @@
     <Content Include="card\7.jpg" />
     <Content Include="card\8.jpg" />
     <Content Include="card\9.jpg" />
+    <Content Include="readme_hw02.png" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\54.jpg" />
     <None Include="Resources\53.jpg" />
